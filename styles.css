@@ -1,0 +1,128 @@
+section{
+    border:2px solid #d0d0d5;
+    max-width: 45rem;
+    margin: 0 auto;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    color: #0a0a23;
+}
+.table-wrap{
+    padding: 0 0.75rem 1.5rem 0.75rem;
+    margin-top: 1px;
+
+}
+.heading{
+    padding: 25px;
+    margin: 0;
+
+}
+h1 .flex{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+}
+
+h1 .flex span:first-of-type{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+h1 .flex span:last-of-type{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+span[class~="sr-only"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+.years{
+    background-color: #0a0a23;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -1px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+.years span[class]{
+    color: white;
+    width: 3.58rem;
+    text-align: right;
+}
+table caption {
+    color: #356eaf;
+    font-size: 1.5em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+caption{
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+
+}
+.data th{
+   text-align: left;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+.description{
+    display: block;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+    font-weight: normal;
+    font-style: italic;
+}
+tbody th{
+    width: calc(100% - 12rem);
+}
+tbody td{
+    width: 100vw;
+    min-width: 4rem;
+    max-width: 4rem;
+    padding-top: 0.3rem;
+}
+td{
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+
+}
+tr.data {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+
+}
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+    text-align: left;
+}
+.total th{
+    padding-left: 0.5rem;
+}
+tr[class="total"]:hover{
+   background-color: #99c9ff;
+}
